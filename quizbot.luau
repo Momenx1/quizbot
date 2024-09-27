@@ -1046,6 +1046,20 @@ guessTheBook:Add("In which dystopian novel is the phrase 'Big Brother is watchin
 guessTheBook:Add("Which book tells the story of a boy named Charlie who wins a golden ticket?", {"Charlie and the Chocolate Factory", "Charlie and the Giant Peach", "Wonka's Chocolate Factory", "The BFG"})
 guessTheBook:Add("Which book tells the story of a boy who never grows up and lives in Neverland?", {"Peter Pan", "The Wonderful Wizard of Oz", "Alice in Wonderland", "The Chronicles of Narnia"})
 
+local TechnologyEasy = CustomCategoryManager.New("Technology", "easy")
+TechnologyEasy:Add("What does "HTML" stand for?", {"Hyper Text Markup Language", "High Text Multi Language", "Hyperlink Text Markup Language", "java"}, 2)
+TechnologyEasy:Add("Which company created the iPhone?", {"Apple", "Google", "Microsoft", "Android"})
+TechnologyEasy:Add("What is the main function of a mouse?", {"navigate a computer interface", "Store data", "clicking", "Gaming"})
+TechnologyEasy:Add("What does "Wi-Fi" stand for?", {"Wireless Fidelity", "Wide Fidelity", "Wireless Functionality", "WI-FI"}, 1.5)
+
+local TechnologyHard = CustomCategoryManager.New("Technology", "hard")
+TechnologyHard:Add("What does the acronym "VPN" stand for?", {"Virtual Private Network", "Variable Protocol Network", "Visual Public Network", "Verified Private Network"}, 3)
+TechnologyHard:Add("Which programming language is known for its use in artificial intelligence?", {"Prolog", "Java", "C#", "Ruby"}, 2.5)
+TechnologyHard:Add("What year was the first iPhone released?", {"2007", "2005", "2009", "2010"}, 3.5)
+TechnologyHard:Add("Which company developed the first commercial microprocessor?", {"Intel", "AMD", "IBM", "Motorola"}, 1.5)
+TechnologyHard:Add("What is the maximum length of a USB 2.0 cable for optimal performance?", {"5 meters", "3 meters", "10 meters", "15 meters"}, 2.5)
+
+
 local categoryTable = {}
 local categoryLookupTable = {} -- categoryLookupTable is used to get the actual quiz table from formatted category name
 
